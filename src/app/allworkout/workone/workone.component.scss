@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 30px;
+}
+.headtxt {
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.alltxt {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    font-family: upgrade-lights;
+}
+section {
+    height: 2000px;
+}
+.box {
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+.img1 {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+}
+//
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+}
+.mat {
+    width: 400px;
+    z-index: 1;
+    background-color: grey;
+}
+.txt {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ul,
+li {
+    font-size: 13px;
+    color: white;
+    list-style-type: disc;
+}
+.spatiu {
+    height: 135px;
+    .mytxt {
+        position: relative;
+        top: 30px;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        font-size: 80px;
+        -webkit-text-stroke: 0.5px white;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.5;
+        font-family: arial;
+        opacity: 0.3;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+@media screen and (max-width: 575px) {
+    .mycontainer {
+        position: relative;
+    }
+    section {
+        height: 4300px;
+    }
+    .headtxt {
+        font-size: 15px;
+    }
+    .alltxt {
+        width: 90%;
+        font-size: 12px;
+    }
+    .box {
+        margin: 30px;
+    }
+    .spatiu {
+        height: 180px;
+        .mytxt {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headtxt {
+        font-size: 20px;
+    }
+    .alltxt {
+        width: 90%;
+        font-size: 16px;
+    }
+    section {
+        height: 4300px;
+    }
+    .box {
+        margin: 30px;
+    }
+    .spatiu {
+        height: 120px;
+        .mytxt {
+            position: relative;
+            top: 10px;
+            font-size: 45px;
+        }
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    .headtxt {
+        position: relative;
+        top: 17px;
+        font-size: 30px;
+    }
+    .alltxt {
+        position: relative;
+        top: 15px;
+        line-height: 25px;
+        width: 90%;
+        font-size: 22px;
+    }
+    section {
+        height: 4300px;
+    }
+    .box {
+        margin: 30px;
+    }
+    .spatiu {
+        height: 145px;
+        .mytxt {
+            font-size: 45px;
+        }
+    }
+}

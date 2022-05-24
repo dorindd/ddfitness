@@ -1,0 +1,68 @@
+:host {
+    display: block;
+    background: #1c1d26;
+    width: 100%;
+    height: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    position: relative;
+    top: 20px;
+    .txt {
+        font-size: 80px;
+        -webkit-text-stroke: 0.5px white;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.5;
+        font-family: arial;
+        opacity: 0.3;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+@media screen and (max-width: 575px) {
+    :host {
+        display: block;
+        background: #1c1d26;
+        width: 100%;
+        height: 150px;
+    }
+    .container {
+        position: relative;
+        left: 30px;
+        .txt {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    :host {
+        position: relative;
+        bottom: 200px;
+        left: 100px;
+        display: block;
+        height: 100px;
+    }
+    .container {
+        //left:130px;
+        //   bottom:100px;
+        .txt {
+            font-size: 50px;
+        }
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    :host {
+        display: block;
+        height: 120px;
+    }
+    .container {
+        position: relative;
+        top: 20px;
+        .txt {
+            font-size: 70px;
+        }
+    }
+}

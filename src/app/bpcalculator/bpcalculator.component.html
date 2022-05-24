@@ -1,0 +1,57 @@
+<section>
+  <div class=" mybox">
+    <p class='txt'>BMI & BFP calculator</p>
+    <div class="box">
+      <label for="height">Height <span class='star'>*</span> <input type="number" id='height'
+          placeholder=" Height : 180 cm" [(ngModel)]="height" required min="1"></label>
+      <label for="weight">Weight <span class='star'>*</span><input type="number" id='weight'
+          placeholder=" Weight : 65 kg" [(ngModel)]="weight" required min="1"> </label>
+    </div>
+    <div class="box1">
+      <p class='total' [ngStyle]="{'backgroundColor':getColor()}">{{total|number:'1.0-1'}}</p>
+    </div>
+    <div class="alldata">
+      <div class='box2 mybox2' [class.color1]='value1'>Underweight<br>
+        < 18.5</div> <div class='box2 mybox1' [class.color2]='value2'>Normal weight<br>18,5 - 25
+      </div>
+      <div class='box2 mybox3' [class.color3]='value3'>Overweight<br>25 - 30</div>
+      <div class='box2 mybox3' [class.color4]='value4'>Obese<br>> 30</div>
+    </div>
+    <div class="btn-box">
+      <label for="male">Male <span class='star'>*</span> <input type="radio" name="data" id="male" (click)='showAge1()'
+          checked></label>
+      <label for="female">Female <span class='star'>*</span><input type="radio" name="data" id="female"
+          (click)='showAge()'></label>
+    </div>
+    <div class="procent" *ngIf='showvalue ;else age'>
+      <p class='procent-txt'>Male Body Fat Percentage (BFP) </p>
+      <label for="age">age <span class='star'>*</span></label>
+      <input class='ageinput' id='age' type="number" placeholder="Age:30 " [(ngModel)]="agem" required min="1">
+      <div class="total1" [ngStyle]="{'backgroundColor':getColor1()}">{{malecalc|number:'1.0-1'}}</div>
+      <div class="alldata1">
+        <div class='box3 mybox23' [class.color5]='value5'>Esential fat<br>2-5%</div>
+        <div class='box3 ' [class.color6]='value6'>Athletes<br>6-13%</div>
+        <div class='box3 ' [class.color7]='value7'>Fitness<br>14-17%</div>
+        <div class='box3 ' [class.color8]='value8'>Average<br>18-24%</div>
+        <div class='box3 ' [class.color9]='value9'>Obese<br>25+%</div>
+      </div>
+    </div>
+    <ng-template #age>
+      <div class="procent">
+        <p class='procent-txt1'>Female Body Fat Percentage (BFP) </p>
+        <label for="age">age <span class='star'>*</span></label>
+        <input class='ageinput' type="number" placeholder="Age:30 " [(ngModel)]="agef" required min="1">
+        <div class="total1" [ngStyle]="{'backgroundColor':getColor2()}">{{femalecalc|number:'1.0-1'}}</div>
+        <div class="alldata1">
+          <div class='box3 mybox23' [class.color10]='value10'>Esential fat<br>10-13%</div>
+          <div class='box3 ' [class.color11]='value11'>Athletes<br>14-20%</div>
+          <div class='box3 ' [class.color12]='value12'>Fitness<br>21-24%</div>
+          <div class='box3 ' [class.color13]='value13'>Average<br>25-31%</div>
+          <div class='box3 ' [class.color14]='value14'>Obese<br>32+%</div>
+        </div>
+      </div>
+    </ng-template>
+    <button class='btn-btn' (click)="getData()">CALCULATE</button>
+    <button class='btn-clear' (click)="getClear()">Clear</button>
+  </div>
+</section>

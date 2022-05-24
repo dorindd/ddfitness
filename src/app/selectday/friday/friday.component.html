@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div class="comp">
+  <app-mytext></app-mytext>
+</div>
+<app-bigdata></app-bigdata>
+<app-enhancetxt></app-enhancetxt>
+<section>
+  <div class="box">
+    <div class="mybox">
+      <p class="text1">Friday</p>
+      <input type="text" [(ngModel)]="value" placeholder="* Describe your workout schedule" />
+      <button type="button" class="btn-btn" (click)="add()" [disabled]='!value'>
+        <span class="add-btn">Add</span>
+      </button>
+      <button class="btn-info" (click)="getInfo()">
+        <span class="info-btn">Info</span>
+      </button>
+    </div>
+  </div>
+  <div class="mycontainer">
+    <p class='task' [class.color]='mycolor'>{{message}}</p>
+  </div>
+  <div class="container">
+    <div class="example-container">
+      <p class="txt-txt">Friday Workout Schedule</p>
+      <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" [cdkDropListConnectedTo]="[doneList]"
+        class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box mytodo" *ngFor="let item of todo; let index = index" cdkDrag
+          (dblclick)="getdelate(index)">{{ item }}</div>
+      </div>
+    </div>
+    <div class="example-container">
+      <p class="txt-txt">Done</p>
+      <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done" [cdkDropListConnectedTo]="[todoList]"
+        class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box mylist" *ngFor="let item of done; let index = index" cdkDrag>
+          <div (dblclick)="delate(index)">{{item}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [@bounce]="bounce" class="notification" *ngIf='showNot'>
+    <div class='icon' (click)="getClosed()"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <p class='title'>How to use workout schedule</p>
+    <p class="info">
+      Add your workout schedule.<br />
+      Drag your finished schedule in the DONE area.<br />
+      <span class="deltxt">(will be marked in red)</span>
+      <br />Double click if you want to delate the schedule.<br />
+    </p>
+  </div>
+</section>
+<app-txtmotivated></app-txtmotivated>
+<app-fitfooter></app-fitfooter>

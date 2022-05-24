@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
+<header>
+  <div class="brand">
+    <div id="text" class="content">
+      <h2>Project Fit</h2>
+      <h2>Project Fit</h2>
+    </div>
+  </div>
+  <div class="txt-goal">
+    <p>Home</p>
+  </div>
+  <div>
+    <p class='txt'>Fitness</p>
+    <p class='txt1'>at <span class='txt3'>Home</span></p>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-wrapper">
+      <a class="burger-nav"><i class="material-icons">menu</i></a>
+      <div id="trapezoid">
+        <p class="sub-home"><span class='txt-nav'>Project Fit</span></p>
+        <ul>
+          <li><span routerLink='/' class="expandHome">Home</span></li>
+          <li><span routerLink='/testa/workone' (click)="getPilates()" class="expandHome">Pilates</span></li>
+          <li><span class="expandHome" routerLink='/testa/worktwo' (click)="getHomeworkout()">Workout</span></li>
+          <li><span class="expandHome" routerLink='/testa/workthree' (click)="getWeightsworkout()">Weights
+              Training</span></li>
+          <li><span class="expandHome" routerLink='/form/formcontact'>Contact</span></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

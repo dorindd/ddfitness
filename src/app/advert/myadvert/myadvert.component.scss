@@ -1,0 +1,280 @@
+:host {
+  display: block;
+  position: relative;
+  background: #1c1d26;
+  height: 300px;
+  scroll-behavior: smooth;
+}
+.container {
+  position: relative;
+  bottom: 130px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  transform: skew(-20deg);
+  margin: 4px;
+  backdrop-filter: grayscale(1) contrast(3) blur(1px);
+  cursor: pointer;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(144, 64, 190);
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.box1 {
+  background-image: url("/assets/img/bmi2.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+  font-family: none;
+}
+.calc {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 2px 0px 0px rgba(15, 15, 15, 1);
+  z-index: 1;
+}
+.box1:hover {
+  transition: 0.7s ease;
+  text-shadow: 2px 0px 0px rgba(15, 15, 15, 1);
+  letter-spacing: 2px;
+  font-family: none;
+  filter: opacity(0.7) drop-shadow(0 0 0 rgb(36, 6, 44));
+  padding-top: 60px;
+  padding-left: 40px;
+  color: black;
+}
+.box1:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "A little progress each day,adds up to big results";
+  transition: 0.7s ease;
+  position: relative;
+  top: 30px;
+  font-weight: 800;
+  font-size: 24px;
+}
+.box2 {
+  background-image: url("/assets/img/work.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+  text-align: center;
+  color: white;
+  font-family: none;
+  font-size: 20px;
+  text-shadow: 1.4px 0px 0px rgba(15, 15, 15, 1);
+}
+.box2:hover {
+  transition: 0.7s ease;
+  text-shadow: 2px 0px 0px rgba(15, 15, 15, 1);
+  letter-spacing: 2px;
+  font-family: none;
+  filter: opacity(0.7) drop-shadow(0 0 0 rgb(36, 6, 44));
+  padding-top: 60px;
+  padding-left: 4px;
+  color: black;
+}
+.box2:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Track your progress with  workout schedule";
+  transition: 0.7s ease;
+  position: relative;
+  top: 30px;
+  font-weight: 800;
+  font-size: 24px;
+}
+.box3 {
+  background-image: url("/assets/img/pilate2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: none;
+  height: 80%;
+}
+.box3:hover {
+  transition: 0.7s ease;
+  text-shadow: 2px 0px 0px rgba(15, 15, 15, 1);
+  letter-spacing: 2px;
+  font-family: none;
+  filter: opacity(0.7) drop-shadow(0 0 0 rgb(36, 6, 44));
+  padding-top: 60px;
+  padding-left: 40px;
+  color: black;
+}
+.box3:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Best exercises for your at home daily routine";
+  transition: 0.7s ease;
+  position: relative;
+  top: 30px;
+  font-weight: 800;
+  font-size: 24px;
+}
+@media screen and (max-width: 575px) {
+  :host {
+    display: block;
+    height: 400px;
+  }
+  .container {
+    position: relative;
+    bottom: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+  .box {
+    width: 230px;
+    height: 220px;
+  }
+  .calc {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .box1:hover {
+    padding-top: 30px; //60
+    padding-left: 20px;
+  }
+  .box1:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+  .box2:hover {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .box2:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+  .box3:hover {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .box3:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    height: 300px;
+  }
+  .container {
+    position: relative;
+    bottom: 300px;
+  }
+  .box {
+    width: 220px;
+    height: 280px;
+  }
+  .calc {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .box1:hover {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .box1:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+  .box2:hover {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .box2:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+  .box3:hover {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .box23hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    height: 330px;
+  }
+  .container .box {
+    width: 300px;
+    height: 300px;
+  }
+  .calc {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .box1:hover {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .box1:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+  }
+  .box2:hover {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .box2:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+  }
+  .box3:hover {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .box3:hover::after {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+  }
+}

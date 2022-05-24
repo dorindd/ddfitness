@@ -1,0 +1,40 @@
+<div class="container1" id='schedule'>
+  <div class="box">
+    <p class='txt'>Workout</p>
+    <p class='txt1'>Schedule</p>
+  </div>
+  <div class="box">
+    <select matNativeControl required (change)="getData($event.target.value)">
+      <option>Select a day</option>
+      <option value="selectday/monday">Monday</option>
+      <option value="selectday/tuesday">Tuesday</option>
+      <option value="selectday/wednesday">Wednesday</option>
+      <option value="selectday/thursday">Thursday</option>
+      <option value="selectday/friday">Friday</option>
+      <option value="selectday/saturday">Saturday</option>
+      <option value="selectday/sunday">Sunday</option>
+    </select>
+  </div>
+</div>
+<p class='add'>Add the timetable </p>
+<div class="container2">
+  <div class="container3">
+    <div class="day mytxt">Monday</div>
+    <div class="day mytxt">Tuesday</div>
+    <div class="day mytxt ">Wednesday</div>
+    <div class="day mytxt">Thursday</div>
+    <div class="day mytxt ">Friday</div>
+    <div class="day mytxt">Saturday</div>
+    <div class="day mytxt ">Sunday</div>
+  </div>
+  <div class="container-container">
+    <div class="mybox box1"><span class='txt-break'>Running</span></div>
+    <div class="mybox box2"><span class='txt-break'>Pilates</span></div>
+    <div class="mybox break"><span class='txt-break'>Break</span></div>
+    <div class="mybox box3"><span class='txt-break'>Weights</span></div>
+    <div class="mybox box4"><span class='txt-break'>Yoga</span></div>
+    <div class="mybox box5"><span class='txt-break'>Meditation</span></div>
+    <div class="mybox break"><span class='txt-break'>Break</span></div>
+  </div>
+  <app-myschedulecalendar></app-myschedulecalendar>
+</div>

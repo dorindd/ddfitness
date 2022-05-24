@@ -1,0 +1,55 @@
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material.css';
+
+html{scroll-behavior: smooth;
+   height: 100%;
+width:100%;
+}
+ body {
+
+margin:0px;
+padding:0px;
+overflow-x:hidden;
+background:#1C1D26;
+font-family: Roboto, "Helvetica Neue", sans-serif;
+
+
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+  html,body{
+
+    display:block;
+     overflow-x: hidden;
+  }
+
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+html,body{
+  display:block;
+    overflow-x: hidden;
+  }
+
+
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  html,body{
+    display:block;
+    overflow-x: hidden;
+  }
+
+}
+
+
+

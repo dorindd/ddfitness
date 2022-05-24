@@ -1,0 +1,369 @@
+section {
+  background: #1c1d26;
+}
+.mybox {
+  width: 500px;
+  height: 270px;
+  border: 1px solid white;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  z-index: 1;
+  .txt {
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .box {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    padding: 5px;
+  }
+  input {
+    outline: none;
+    margin: 5px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  input::placeholder {
+    color: white;
+    opacity: 0.5;
+    text-indent: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+  }
+  .btn-btn {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    background-color: rgba(255, 0, 212, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .btn-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+  }
+  .total {
+    width: 165px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .alldata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  .box1 {
+    display: flex;
+    justify-content: center;
+  }
+  .box2 {
+    width: 150px;
+    height: 43px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .mybox2 {
+    border-left: none;
+  }
+  .color1 {
+    width: 150px;
+    height: 43px;
+    background-color: #fcaf41;
+  }
+  .color2 {
+    width: 150px;
+    height: 43px;
+    background-color: #2fa23c;
+  }
+  .color3 {
+    width: 150px;
+    height: 43px;
+    background-color: #e75d2c;
+  }
+  .color4 {
+    width: 150px;
+    height: 43px;
+    background-color: #bf011e;
+  }
+  .btn-clear {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    border: 1px solid white;
+    background-color: rgba(255, 0, 212, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+    color: white;
+  }
+  .btn-clear:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: red;
+  }
+  label {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .star {
+    color: red;
+  }
+  // male fat procentage
+
+  .procent {
+    position: relative;
+    top: 4px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 152px;
+    border: 1px solid white;
+    background: #1c1d26;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+    .box3 {
+      width: 150px;
+      height: 43px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 12px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.8);
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+      border: 1px rgba(255, 255, 255, 0.4) solid;
+      border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+      border-right: 1px rgba(40, 40, 40, 0.35) solid;
+    }
+    .mybox23 {
+      border-left: none;
+    }
+    .alldata1 {
+      position: relative;
+      top: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+    .total1 {
+      display: block;
+      margin: 0 auto;
+      width: 165px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      padding-top: 5px;
+    }
+    .procent-txt {
+      position: relative;
+      top: 5px;
+      color: #95a5a6;
+      font-weight: 500;
+      font-style: oblique;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .procent-txt1 {
+      position: relative;
+      top: 5px;
+      font-weight: 500;
+      font-style: oblique;
+      color: pink;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .ageinput {
+      width: 100px;
+    }
+    .color5 {
+      width: 150px;
+      height: 43px;
+      background-color: #890004;
+    }
+    .color6 {
+      width: 150px;
+      height: 43px;
+      background-color: #00ff78;
+    }
+    .color7 {
+      width: 150px;
+      height: 43px;
+      background-color: #00813c;
+    }
+    .color8 {
+      width: 150px;
+      height: 43px;
+      background-color: #fde335;
+    }
+    .color9 {
+      width: 150px;
+      height: 43px;
+      background-color: red;
+    }
+    .color10 {
+      width: 150px;
+      height: 43px;
+      background-color: #890004;
+    }
+    .color11 {
+      width: 150px;
+      height: 43px;
+      background-color: #00ff78;
+    }
+    .color12 {
+      width: 150px;
+      height: 43px;
+      background-color: #00813c;
+    }
+    .color13 {
+      width: 150px;
+      height: 43px;
+      background-color: #fde335;
+    }
+    .color14 {
+      width: 150px;
+      height: 43px;
+      background-color: red;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  section {
+    .mybox {
+      position: relative;
+      top: 10px;
+      width: 365px;
+      height: 270px;
+      display: block;
+      margin: 0 auto;
+    }
+    .txt {
+      font-size: 10px;
+    }
+    .box {
+      width: 250px;
+    }
+    .box2 {
+      width: 150px;
+      font-size: 7px;
+      line-height: 13px;
+    }
+    .btn-btn {
+      width: 110px;
+    }
+    .mybox1 {
+      padding-top: 2px;
+    }
+    .mybox2 {
+      padding-top: 10px;
+    }
+    .mybox3 {
+      padding-top: 10px;
+    }
+  }
+  .procent {
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    .procent-txt {
+      font-size: 12px;
+    }
+    .procent-txt1 {
+      font-size: 12px;
+    }
+    .box3 {
+      letter-spacing: none;
+    }
+    .mybox23 {
+      padding-top: 2px;
+      line-height: 13px;
+      font-size: 6px;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    position: relative;
+    bottom: 60px;
+  }
+  .mybox {
+    width: 500px;
+    .txt {
+      font-size: 20px;
+    }
+    .box {
+      width: 250px;
+    }
+    .box2 {
+      width: 150px;
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mybox {
+    position: relative;
+    bottom: 20px;
+    width: 500px;
+    .txt {
+      font-size: 22px;
+    }
+    .box {
+      width: 250px;
+    }
+    .box2 {
+      width: 150px;
+      font-size: 16px;
+    }
+  }
+}

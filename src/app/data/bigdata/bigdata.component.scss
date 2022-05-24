@@ -1,0 +1,185 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  background: #1c1d26;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt {
+  position: relative;
+  top: 50px;
+  font-size: 60px;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: transparent;
+  font-family: arial;
+  opacity: 0.3;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.schedule {
+  position: relative;
+  top: 90px;
+  text-align: center;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: arial;
+  font-weight: 800;
+  opacity: 0.2;
+  letter-spacing: 2px;
+  z-index: -1;
+}
+.mybox {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  width: 400px;
+  height: 260px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 1px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+  border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  //background: rgba(255, 255, 255, 0.2);
+  .text {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  select {
+    z-index: 6;
+    text-align: center;
+    color: white;
+    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #252630;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+    outline: none;
+  }
+  select:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .myform:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  option {
+    border: 1px solid white;
+    color: white;
+    background-color: #2c2c54;
+  }
+}
+@media screen and (max-width: 575px) {
+  :host {
+    display: block;
+    height: 250px;
+  }
+  section {
+    display: block;
+    margin: 0 auto;
+  }
+  .txt {
+    font-size: 25px;
+    margin-left: 45px;
+  }
+  .text {
+    position: relative;
+    top: 10px;
+  }
+  select {
+    width: 100px;
+    font-size: 10px;
+  }
+  .schedule {
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+  }
+  .mybox {
+    position: relative;
+    top: 10px;
+    width: 300px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+  }
+  section {
+    width: 100%;
+  }
+  .txt {
+    position: relative;
+    left: 140px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .mybox {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    .text {
+      font-size: 13px;
+      position: relative;
+      top: 10px;
+    }
+    select {
+      width: 250px;
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    height: 360px;
+  }
+  section {
+    flex-direction: column;
+  }
+  .txt {
+    position: relative;
+    left: 250px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .mybox {
+    width: 500px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    .text {
+      font-size: 15px;
+      position: relative;
+      top: 5px;
+    }
+    select {
+      width: 250px;
+      font-size: 20px;
+    }
+  }
+}

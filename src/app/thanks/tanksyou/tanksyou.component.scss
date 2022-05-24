@@ -1,0 +1,121 @@
+:host {
+    display: block;
+    min-height: 800px;
+}
+.mycontainer {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+    width: 40%;
+    height: 400px;
+    background-color: #2d2c53;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+}
+.txt {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-family: Arizonia, cursive;
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+@keyframes opacityPulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.txt1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 150px;
+    font-family: Arizonia, cursive;
+}
+.btn-btn1 {
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 250px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.btn-btn1:hover {
+    opacity: 0.8;
+    color: grey;
+}
+.btn-txt {
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    top: 1px;
+    right: 5px;
+}
+@media screen and (max-width: 575px) {
+    :host {
+        display: block;
+        height: 550px;
+    }
+    .mycontainer {
+        width: 90%;
+        position: relative;
+        top: 120px;
+    }
+    .txt {
+        font-size: 30px;
+    }
+    .txt1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    :host {
+        display: block;
+        height: 700px;
+    }
+    .mycontainer {
+        width: 90%;
+        position: relative;
+        top: 240px;
+    }
+    .txt {
+        font-size: 50px;
+    }
+    .txt1 {
+        font-size: 40px;
+    }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    :host {
+        display: block;
+        height: 700px;
+    }
+    .mycontainer {
+        width: 90%;
+        position: relative;
+        top: 240px;
+    }
+    .txt {
+        font-size: 50px;
+    }
+    .txt1 {
+        font-size: 40px;
+    }
+}

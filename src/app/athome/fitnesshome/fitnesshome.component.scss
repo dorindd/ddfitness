@@ -1,0 +1,329 @@
+:host {
+  position: relative;
+  top: 20px;
+  display: block;
+  height: 550px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.box {
+  position: relative;
+  border: 1px solid #bbb;
+  background: #eee;
+}
+.ribbon {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+.ribbon span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79a70a;
+  background: linear-gradient(#9bc90d 0%, #79a70a 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79a70a;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79a70a;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79a70a;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79a70a;
+}
+.mybox1 {
+  display: block;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.mybox2 {
+  display: block;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.mybox3 {
+  display: block;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #5614fa;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.box1 {
+  background: url("/assets/img/pilates4.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.overlay:hover {
+  opacity: 0.1;
+}
+.box1:hover {
+  transform: scale(1.4);
+}
+.box1:hover::after {
+  content: "Pilates";
+  transition: all 4s;
+  transition-timing-function: ease-in;
+  position: absolute;
+  top: 13%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: scale(1.4);
+}
+.box2 {
+  background-image: url("/assets/img/pp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.box2:hover {
+  transform: scale(1.4);
+}
+.box2:hover::after {
+  content: "Body Weight workout";
+  transition: all 4s;
+  transition-timing-function: ease-in;
+  position: absolute;
+  top: 13%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: scale(1.4);
+}
+.box3 {
+  background-image: url("/assets/img/weights3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.box3:hover {
+  transform: scale(1.4);
+}
+.box3:hover::after {
+  content: "weights exercises";
+  transition: all 4s;
+  transition-timing-function: ease-in;
+  position: absolute;
+  top: 13%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: scale(1.4);
+}
+@media screen and (max-width: 575px) {
+  :host {
+    position: relative;
+    display: block;
+    height: 850px;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .box1:hover::after {
+    position: absolute;
+    top: 16%;
+    font-size: 5px;
+  }
+  .box2:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 33%;
+    font-size: 5px;
+  }
+  .box3:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 37%;
+    font-size: 5px;
+  }
+  .mybox1 {
+    width: 250px;
+    height: 200px;
+  }
+  .mybox2 {
+    width: 250px;
+    height: 200px;
+  }
+  .mybox3 {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    height: 500px;
+  }
+  .container {
+    position: relative;
+    display: flex;
+  }
+  .box1:hover::after {
+    position: absolute;
+    top: 16%;
+    font-size: 6px;
+  }
+  .box2:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    font-size: 6px;
+  }
+  .box3:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    font-size: 6px;
+  }
+  .mybox1 {
+    width: 300px;
+    height: 250px;
+  }
+  .mybox2 {
+    width: 300px;
+    height: 250px;
+  }
+  .mybox3 {
+    width: 300px;
+    height: 250px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    height: 500px;
+  }
+  .container {
+    position: relative;
+    display: flex;
+  }
+  .box1:hover::after {
+    position: absolute;
+    top: 16%;
+    font-size: 7px;
+  }
+  .box2:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 31%;
+    font-size: 7px;
+  }
+  .box3:hover::after {
+    position: absolute;
+    top: 16%;
+    left: 37%;
+    font-size: 7px;
+  }
+  .mybox1 {
+    width: 300px;
+    height: 250px;
+  }
+  .mybox2 {
+    width: 300px;
+    height: 250px;
+  }
+  .mybox3 {
+    width: 300px;
+    height: 250px;
+  }
+}

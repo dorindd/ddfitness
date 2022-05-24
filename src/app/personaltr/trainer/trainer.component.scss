@@ -1,0 +1,303 @@
+:host {
+  background: #1c1d26;
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    width: 650px;
+    height: 350px;
+    margin: 20px;
+  }
+  .img {
+    width: 500px;
+    height: 333px;
+  }
+  .txt {
+    position: relative;
+    top: 5px;
+    color: #5614fa;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: arial;
+    line-height: 25px;
+  }
+  .linie {
+    position: relative;
+    left: 2px;
+    bottom: 8px;
+    width: 510px;
+    height: 5px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .linie1 {
+    position: relative;
+    left: 2px;
+    bottom: 20px;
+    width: 510px;
+    height: 5px;
+    background-color: #5614fa;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .txt-txt p {
+    width: 86%;
+    height: 150px;
+    position: relative;
+    bottom: 20px;
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+    line-height: 22px;
+  }
+  .button {
+    position: relative;
+    left: 10px;
+    width: 195px;
+    height: 70px;
+    transform: skew(-15deg);
+    background: #5614fa;
+    cursor: pointer;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
+  .btn-txt {
+    position: relative;
+    top: 25px;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-weight: 800;
+    font-size: 17px;
+    display: block;
+    margin: 0 auto;
+  }
+  .myicon {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    transform: rotate(-320deg);
+  }
+}
+@media only screen and (max-width: 575px) {
+  :host {
+    display: block;
+    height: 800px;
+  }
+  .container {
+    position: relative;
+    bottom: 50px;
+    flex-direction: column;
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 270px;
+    }
+    .txt {
+      position: relative;
+      top: -70px;
+      line-height: none;
+      text-align: center;
+      font-size: 13px;
+    }
+    .linie {
+      margin: 0 auto;
+      position: relative;
+      bottom: 75px;
+      height: 3px;
+      width: 330px;
+    }
+    .linie1 {
+      margin: 0 auto;
+      position: relative;
+      bottom: 70px;
+      height: 3px;
+      width: 330px;
+    }
+    .txt-txt p {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      height: 100px;
+      color: white;
+      position: relative;
+      bottom: 60px;
+      font-weight: 100;
+      font-size: 11px;
+      text-align: center;
+    }
+    .button {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 160px;
+      height: 55px;
+    }
+    .btn-txt {
+      position: relative;
+      top: 17px;
+      font-size: 14px;
+    }
+    .myicon {
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    position: relative;
+    bottom: 180px;
+    display: block;
+    height: 800px;
+  }
+  .container {
+    flex-direction: column;
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 600px;
+      height: 365px;
+    }
+    .txt {
+      position: relative;
+      bottom: 20px;
+      top: -20px;
+      line-height: none;
+      text-align: center;
+      font-size: 23px;
+    }
+    .linie {
+      margin: 0 auto;
+      position: relative;
+      width: 600px;
+      bottom: 20px;
+      height: 4px;
+    }
+    .linie1 {
+      margin: 0 auto;
+      position: relative;
+      width: 600px;
+      bottom: 15px;
+      height: 4px;
+    }
+    .txt-txt p {
+      width: 95%;
+      height: 170px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      top: 10px;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+    }
+    .button {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 180px;
+      height: 65px;
+    }
+    .btn-txt {
+      position: relative;
+      top: 21px;
+      font-size: 16px;
+    }
+    .myicon {
+      font-size: 18px;
+    }
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  :host {
+    display: block;
+    background: #1c1d26;
+    height: 1110px;
+  }
+  .box {
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+  }
+  .container {
+    flex-direction: column;
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 600px;
+      height: 450px;
+    }
+    .txt {
+      position: relative;
+      top: 70px;
+      line-height: none;
+      text-align: center;
+      font-size: 25px;
+    }
+    .linie {
+      margin: 0 auto;
+      position: relative;
+      width: 640px;
+      top: 80px;
+      height: 4px;
+    }
+    .linie1 {
+      margin: 0 auto;
+      position: relative;
+      width: 640px;
+      top: 85px;
+      height: 4px;
+    }
+    .txt-txt p {
+      width: 95%;
+      height: 370px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      top: 120px;
+      font-size: 20px;
+      line-height: 35px;
+      text-align: left;
+    }
+    .button {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 190px;
+      height: 75px;
+    }
+    .btn-txt {
+      position: relative;
+      top: 24px;
+      font-size: 19px;
+    }
+    .myicon {
+      font-size: 21px;
+    }
+  }
+}

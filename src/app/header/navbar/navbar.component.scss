@@ -1,0 +1,244 @@
+:host {
+  display: block;
+  height: 100px;
+}
+$gray: #2c2c54;
+$not-black-but-dark: #1c1b20;
+$silver: #f8f8f8;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+//MIXIN
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//MAIN CSS
+.mycontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background: #1c1d26;
+  .txt {
+    position: relative;
+    top: 25px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 1000;
+    font-style: oblique;
+    color: #5614fa;
+    letter-spacing: 1px;
+  }
+  .txt2 {
+    color: white;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: arial;
+  }
+}
+.landing-page {
+  width: 100%;
+  .menu-btn {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: $silver;
+    color: $not-black-but-dark;
+    z-index: 6;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .menu-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "+";
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 100 !important;
+    font-family: serif;
+    transition-duration: 500ms;
+  }
+  .menu-btn.active::before {
+    transform: rotate(405deg);
+    background-color: $gray;
+    color: $silver;
+  }
+  .overlay {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #333333;
+    transition-duration: 700ms;
+    z-index: 4;
+    &.active {
+      transform: scale(100, 100);
+    }
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -5;
+    opacity: 0;
+    transition: opacity 1500ms;
+    @include flexcenter();
+    .menu-wrapper {
+      list-style: none;
+      .linie {
+        display: block;
+        margin: 0 auto;
+        border-top: 1px solid white;
+        width: 400px;
+      }
+      .project {
+        text-align: center;
+        color: #5614fa;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-family: arial;
+      }
+      li {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        p {
+          color: white;
+          font-size: 30px;
+          font-weight: 800;
+          line-height: 35px;
+          cursor: pointer;
+          &:hover {
+            color: grey;
+          }
+        }
+      }
+    }
+    &.active {
+      transition-delay: 00ms;
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  :host {
+    display: block;
+    width: 100%;
+    height: 80px;
+  }
+  .mycontainer {
+    display: block;
+    position: fixed;
+    height: 80px;
+    .txt {
+      font-size: 30px;
+    }
+  }
+  .landing-page {
+    .menu-btn {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 80%;
+    }
+    .menu-btn::before {
+      line-height: 41px;
+      font-size: 35px;
+    }
+    .overlay {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mycontainer {
+    .txt {
+      font-size: 35px;
+    }
+  }
+  .landing-page {
+    .menu-btn {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 80%;
+    }
+    .menu-btn::before {
+      line-height: 41px;
+      font-size: 35px;
+    }
+    .overlay {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mycontainer {
+    .txt {
+      font-size: 35px;
+    }
+  }
+  .landing-page {
+    .menu-btn {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 80%;
+    }
+    .menu-btn::before {
+      line-height: 41px;
+      font-size: 35px;
+    }
+    .overlay {
+      position: fixed;
+      top: 25px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<section class="landing-page">
+  <div class="menu-btn"></div>
+  <div class="overlay"></div>
+  <div class="menu-container">
+    <div class="menu-wrapper">
+      <div class="container">
+        <input type='number' [(ngModel)]='value' class='input' placeholder="Add timer" min='0'>
+        <button (click)="start()" class='btn' [disabled]="!value"><img class='myicon' src="/assets/img/icon1.png"
+            alt="icon play"></button>
+        <button (click)="stop()" class='btn1'><img class='myicon1' src="/assets/img/reset.png" alt="icon stop"></button>
+      </div>
+      <p class='counter'>{{counter |minutes}}</p>
+    </div>
+  </div>
+</section>

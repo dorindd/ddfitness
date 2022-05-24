@@ -1,0 +1,19 @@
+<section>
+  <div class=" mybox">
+    <p class="text">Workout Schedule</p>
+    <select matNativeControl required (change)="getData($event.target.value)">
+      <option selected>Select a day</option>
+      <option value="selectday/monday">Monday</option>
+      <option value="selectday/tuesday">Tuesday</option>
+      <option value="selectday/wednesday">Wednesday</option>
+      <option value="selectday/thursday">Thursday</option>
+      <option value="selectday/friday">Friday</option>
+      <option value="selectday/saturday">Saturday</option>
+      <option value="selectday/sunday">Sunday</option>
+      <option value="main">Home</option>
+    </select>
+    <div class="schedule">
+      <p>plan</p>
+    </div>
+  </div>
+</section>

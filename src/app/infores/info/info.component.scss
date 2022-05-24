@@ -1,0 +1,624 @@
+:host {
+  display: block;
+  background: #333333;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+section {
+  height: auto;
+}
+.mycontainer {
+  display: block;
+  height: 1800px;
+  .txt {
+    position: relative;
+    top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: arial;
+  }
+  .txt1 {
+    margin: 0 auto;
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+    color: white;
+    font-family: upgrade-lights;
+    font-weight: none;
+  }
+  .alldata {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box2 {
+    width: 140px;
+    height: 60px;
+    margin: 1px;
+    text-align: center;
+    padding-top: 9px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .mybox1 {
+    background-color: #fcaf41;
+  }
+  .mybox2 {
+    background-color: #2fa23c;
+  }
+  .mybox3 {
+    background-color: #e75d2c;
+  }
+  .mybox4 {
+    background-color: #bf011e;
+  }
+  .alldata1 {
+    position: relative;
+    top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box22 {
+    width: 140px;
+    height: 60px;
+    margin: 1px;
+    text-align: center;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: white;
+    padding-top: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .gender {
+    color: black;
+    font-weight: 400;
+  }
+  .mybox10 {
+    background-color: #890004;
+  }
+  .mybox20 {
+    background-color: #00ff78;
+  }
+  .mybox30 {
+    background-color: #00813c;
+  }
+  .mybox40 {
+    background-color: #fde335;
+  }
+  .mybox50 {
+    background-color: red;
+  }
+  .results {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .mylist ul li {
+    color: white;
+    list-style-type: none;
+  }
+  .mylist ul li::before {
+    content: "\2022";
+    color: #bf011e;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .mylist1 ul li {
+    color: white;
+    list-style-type: none;
+  }
+  .mylist1 ul li::before {
+    content: "\2022";
+    color: #fcaf41;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .results ul li {
+    color: white;
+    list-style-type: disc;
+  }
+  .table-container {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .tablect {
+    width: 500px;
+    height: 470px;
+    border: 1px solid grey;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(40, 40, 40, 0.35) solid;
+    border-right: 1px rgba(40, 40, 40, 0.35) solid;
+  }
+  .txt2 {
+    position: relative;
+    top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 600;
+  }
+  .txt3 {
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  .table {
+    position: relative;
+    top: 20px;
+  }
+  .allcalc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .calc {
+    width: 350px;
+    height: 75px;
+    border: 1px solid grey;
+    margin: 5px;
+  }
+  .span {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .bmi-txt {
+    position: relative;
+    bottom: 3px;
+    text-align: center;
+    font-size: 11px;
+  }
+  table,
+  th,
+  td {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid grey;
+    width: 350px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .color1 {
+    background-color: #e1f0fe;
+    color: black;
+  }
+  .color2 {
+    background-color: #fcaf41;
+    color: white;
+  }
+  .color3 {
+    background-color: #fcaf41;
+    color: white;
+  }
+  .color4 {
+    background-color: #fcaf41;
+    color: white;
+  }
+  .color5 {
+    background-color: #2fa23c;
+    color: white;
+  }
+  .color6 {
+    background-color: #e75d2c;
+    color: white;
+  }
+  .color7 {
+    background-color: #bf011e;
+    color: white;
+  }
+  .color8 {
+    background-color: #bf011e;
+    color: white;
+  }
+  .color9 {
+    background-color: #bf011e;
+    color: white;
+  }
+  .txt4 {
+    position: relative;
+    top: 150px;
+    color: #bf011e;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: arial;
+  }
+  .txt5 {
+    position: relative;
+    top: 170px;
+    margin: 0 auto;
+    width: 62%;
+    font-size: 15px;
+    color: white;
+    font-family: upgrade-lights;
+    font-weight: none;
+  }
+  .mylist {
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+  }
+  .txt6 {
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 63%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: upgrade-lights;
+    font-weight: none;
+  }
+  .txt7 {
+    position: relative;
+    top: 250px;
+    color: #fcaf41;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: arial;
+  }
+  .txt8 {
+    position: relative;
+    top: 270px;
+    width: 62%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: white;
+    font-family: upgrade-lights;
+    font-weight: none;
+  }
+  .mylist1 {
+    position: relative;
+    top: 280px;
+    display: flex;
+    justify-content: center;
+  }
+  .txt9 {
+    position: relative;
+    top: 280px;
+    margin: 0 auto;
+    width: 63%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: upgrade-lights;
+    font-weight: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  section {
+    height: auto;
+  }
+  .mycontainer {
+    display: block;
+    height: 2920px;
+    .txt {
+      font-size: 30px;
+    }
+    .txt1 {
+      font-size: 12px;
+      text-align: center;
+    }
+    .alldata {
+      width: 100%;
+      position: relative;
+      top: 70px;
+    }
+    .alldata1 {
+      width: 100%;
+      position: relative;
+      top: 75px;
+    }
+    .calc {
+      width: 90%;
+    }
+    .bmi-txt {
+      font-size: 10px;
+    }
+    .box2 {
+      font-size: 10px;
+    }
+    .box22 {
+      font-size: 10px;
+    }
+    .results {
+      position: relative;
+      top: 100px;
+    }
+    .results ul,
+    li {
+      font-size: 12px;
+    }
+    .mylist ul,
+    li {
+      font-size: 12px;
+    }
+    .mylist1 ul,
+    li {
+      font-size: 12px;
+    }
+    .table-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .tablect {
+      width: 100%;
+      height: 500px;
+      margin: 2px;
+    }
+    .txt2 {
+      font-size: 14px;
+    }
+    .txt3 {
+      font-size: 13px;
+    }
+    .txt4 {
+      font-size: 16px;
+    }
+    .txt5 {
+      width: 80%;
+      font-size: 12px;
+    }
+    .txt6 {
+      width: 89%;
+      font-size: 12px;
+    }
+    .txt7 {
+      font-size: 16px;
+    }
+    .txt8 {
+      width: 80%;
+      font-size: 12px;
+    }
+    .txt9 {
+      width: 80%;
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  section {
+    height: auto;
+  }
+  .mycontainer {
+    display: block;
+    height: 2000px;
+    .txt {
+      font-size: 40px;
+    }
+    .txt1 {
+      font-size: 16px;
+      text-align: center;
+    }
+    .alldata {
+      width: 100%;
+      position: relative;
+      top: 70px;
+    }
+    .alldata1 {
+      width: 100%;
+      position: relative;
+      top: 75px;
+    }
+    .allcalc {
+      position: relative;
+      top: 30px;
+    }
+    .calc {
+      width: 90%;
+      height: 83px;
+    }
+    .bmi-txt {
+      position: relative;
+      bottom: 5px;
+      font-size: 12px;
+    }
+    .box2 {
+      font-size: 14px;
+    }
+    .box22 {
+      font-size: 14px;
+    }
+    .results {
+      position: relative;
+      top: 100px;
+    }
+    .results ul,
+    li {
+      font-size: 15px;
+    }
+    .mylist ul,
+    li {
+      font-size: 15px;
+    }
+    .mylist1 ul,
+    li {
+      font-size: 15px;
+    }
+    .table-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .tablect {
+      width: 99%;
+      height: 510px;
+      margin: 4px;
+    }
+    .txt2 {
+      font-size: 15px;
+    }
+    .txt3 {
+      font-size: 14px;
+    }
+    table,
+    th,
+    td {
+      width: 60%;
+      font-size: 11px;
+    }
+    .txt4 {
+      font-size: 18px;
+    }
+    .txt5 {
+      width: 80%;
+      font-size: 15px;
+    }
+    .txt6 {
+      width: 84%;
+      font-size: 15px; //
+    }
+    .txt7 {
+      font-size: 18px;
+    }
+    .txt8 {
+      width: 80%;
+      font-size: 15px;
+    }
+    .txt9 {
+      width: 90%;
+      font-size: 15px;
+    }
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mycontainer {
+    display: block;
+    height: 1970px;
+    .txt {
+      font-size: 45px;
+    }
+    .txt1 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .alldata {
+      width: 100%;
+      position: relative;
+      top: 70px;
+    }
+    .alldata1 {
+      width: 100%;
+      position: relative;
+      top: 75px;
+    }
+    .calc {
+      position: relative;
+      bottom: 10px;
+      width: 90%;
+    }
+    .bmi-txt {
+      position: relative;
+      bottom: 7px;
+      font-size: 16px;
+    }
+    .box2 {
+      font-size: 16px;
+    }
+    .box22 {
+      font-size: 16px;
+    }
+    .results {
+      position: relative;
+      top: 100px;
+    }
+    .results ul,
+    li {
+      font-size: 18px;
+    }
+    .mylist ul,
+    li {
+      font-size: 18px;
+    }
+    .mylist1 ul,
+    li {
+      font-size: 18px;
+    }
+    .table-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .tablect {
+      width: 99%;
+      height: 510px;
+      margin: 4px;
+    }
+    .txt2 {
+      font-size: 18px;
+    }
+    .txt3 {
+      font-size: 16px;
+    }
+    table,
+    th,
+    td {
+      width: 60%;
+      font-size: 15px;
+    }
+    .txt4 {
+      font-size: 22px;
+    }
+    .txt5 {
+      width: 80%;
+      font-size: 19px;
+    }
+    .txt6 {
+      width: 84%;
+      font-size: 19px;
+    }
+    .txt7 {
+      font-size: 22px;
+    }
+    .txt8 {
+      width: 90%;
+      font-size: 19px;
+    }
+    .txt9 {
+      width: 93%;
+      font-size: 19px;
+    }
+  }
+}
