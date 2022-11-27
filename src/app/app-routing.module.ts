@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TestaComponent } from './allworkout/testa.component';
+
 import { BpcalculatorComponent } from './bpcalculator/bpcalculator.component';
 
 
@@ -31,7 +31,7 @@ const routes: Routes = [
   },
 
   {path:'personaltr',loadChildren:()=>import('./personaltr/personaltr.module').then((m)=>m.PersonaltrModule)},
-  {path:'testa',component:TestaComponent,loadChildren:()=>import('./allworkout/allworkout.module').then((m)=>m.AllworkoutModule)},
+  {path:'testa',loadChildren:()=>import('./allworkout/allworkout.module').then((m)=>m.AllworkoutModule)},
   {path:'homeinfo',loadChildren:()=>import('./homeinfo/homeinfo.module').then((m)=>m.HomeinfoModule)},
   {path:'form',loadChildren:()=>import('./form/form.module').then((m)=>m.FormModule)},
   {path:'thanks',loadChildren:()=>import('./thanks/thanks.module').then((m)=>m.ThanksModule)},

@@ -9,7 +9,7 @@ import { NavpilatesModule } from '../navpilates/navpilates.module';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { TimerModule } from '../timer/timer.module';
 import { FooterModule } from '../footer/footer.module';
-import { TestaComponent } from './testa.component';
+
 
 
 
@@ -19,7 +19,7 @@ import { TestaComponent } from './testa.component';
     WorkoneComponent,
     WorktwoComponent,
     WorkthreeComponent,
-    TestaComponent
+
 
   ],
   imports: [
